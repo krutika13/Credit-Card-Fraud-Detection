@@ -1,4 +1,4 @@
-Sure, here’s a template for a README file tailored for a Credit Card Fraud Detection project using Linear Regression.
+
 
 ---
 
