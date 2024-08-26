@@ -29,7 +29,7 @@ Make sure you have the following installed:
    ```bash
   git clone https://github.com/krutika13/credit-card-fraud-detection.git
 cd credit-card-fraud-detection 
-   ```
+
   
 
 ## Data
