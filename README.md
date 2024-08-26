@@ -1,4 +1,4 @@
-Sure, here’s a template for a README file tailored for a Credit Card Fraud Detection project using Linear Regression. Feel free to adjust the details to fit your project:
+Sure, here’s a template for a README file tailored for a Credit Card Fraud Detection project using Linear Regression.
 
 ---
 
@@ -14,36 +14,40 @@ This project involves detecting fraudulent credit card transactions using a Line
 - [Setup](#setup)
 - [Data](#data)
 - [Model](#model)
-- [Usage](#usage)
 - [Results](#results)
 - [License](#license)
 
 ## Prerequisites
 
 Make sure you have the following installed:
-- Python 3.x
-- Required Python libraries (see `requirements.txt` for details)
+- Python 3.10.12
+
 
 ## Setup
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/credit-card-fraud-detection.git
+  [gh repo clone krutika13/Credit-Card-Fraud-Detection](https://github.com/krutika13/credit-card-fraud-detection.git)
    cd credit-card-fraud-detection
    ```
 
-2. **Install Dependencies:**
-   ```bash
-   pip install -r requirements.txt
+
    ```
 
 ## Data
 
-The dataset used for this project is [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets?search=credit+card+fraud). The dataset includes various features related to credit card transactions, including:
+The dataset used for this project is [Credit Card Fraud Detection Dataset]([https://www.kaggle.com/datasets?search=credit+card+fraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data)). The dataset includes various features related to credit card transactions, including:
 
 - `Amount`: Transaction amount
 - `Time`: Time of transaction
 - `Class`: Target variable indicating fraud (1 for fraud, 0 for non-fraud)
+## Handling Imbalanced Data
+
+The dataset was highly imbalanced, with only 473 fraudulent transactions (class 1) compared to 283,253 non-fraudulent transactions (class 0). To address this imbalance, I performed resampling by upsampling the minority class (fraudulent transactions) to ensure the model receives a balanced view of the classes during training.
+## Feature Importance
+
+To identify the most important features influencing the model's predictions, I used the permutation_importance function from sklearn.inspection. This method shuffles the values of each feature and measures how much the model's performance decreases, giving insight into which features are most critical.
+I found that V14 is the most important feature in predicting fraudulent transactions.
 
 ## Model
 
@@ -61,24 +65,18 @@ Linear Regression is used to predict the likelihood of fraud based on transactio
    - Training the Linear Regression model on the training data
 
 3. **Model Evaluation:**
-   - Evaluating the model performance using metrics like Mean Squared Error (MSE), R-squared score, etc.
+   - Evaluating the model performance using metrics like ROC AUC Score, R-squared score, Accuracy,Precision,Recall etc.
 
-## Usage
 
-1. **Run the Script:**
-   Execute the main script to train the model and make predictions:
-   ```bash
-   python main.py
-   ```
 
-2. **Check Results:**
-   Results and model evaluation metrics will be saved in `results/` directory.
 
 ## Results
 
 - **Model Performance:**
-  - Mean Squared Error (MSE): `0.XX`
-  - R-squared Score: `0.XX`
+  - ROC AUC Score: 0.9765434324521155
+  - Accuracy: 0.9383947326613828
+  - Precision: 0.9597889475145793
+  - Recall: 0.9151294769730455
 
 - **Sample Predictions:**
   The model outputs predictions for whether a transaction is fraudulent or not.
@@ -89,4 +87,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feel free to adjust the specifics, such as the dataset link, model details, and evaluation metrics, based on your actual implementation.
