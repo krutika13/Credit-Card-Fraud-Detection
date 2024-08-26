@@ -72,10 +72,10 @@ Linear Regression is used to predict the likelihood of fraud based on transactio
 ## Results
 
 - **Model Performance:**
-  - ROC AUC Score: 0.9765434324521155
-  - Accuracy: 0.9383947326613828
-  - Precision: 0.9597889475145793
-  - Recall: 0.9151294769730455
+  - `ROC AUC Score:` 0.9765434324521155
+  - `Accuracy:` 0.9383947326613828
+  - `Precision:` 0.9597889475145793
+  - `Recall:` 0.9151294769730455
 
 - **Sample Predictions:**
   The model outputs predictions for whether a transaction is fraudulent or not.
