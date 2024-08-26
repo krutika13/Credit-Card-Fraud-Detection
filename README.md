@@ -27,7 +27,7 @@ Make sure you have the following installed:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/krutika13/credit-card-fraud-detection.git
+   git clone https://github.com/krutika13/Credit-Card-Fraud-Detection
    
    ```
 
