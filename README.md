@@ -35,11 +35,12 @@ Make sure you have the following installed:
 
 ## Data
 
-The dataset used for this project is [Credit Card Fraud Detection Dataset]([https://www.kaggle.com/datasets?search=credit+card+fraud](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data)). The dataset includes various features related to credit card transactions, including:
+The dataset used for this project is the [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/data). The dataset includes various features related to credit card transactions, including:
 
 - `Amount`: Transaction amount
 - `Time`: Time of transaction
 - `Class`: Target variable indicating fraud (1 for fraud, 0 for non-fraud)
+
 ## Handling Imbalanced Data
 
 The dataset was highly imbalanced, with only 473 fraudulent transactions (class 1) compared to 283,253 non-fraudulent transactions (class 0). To address this imbalance, I performed resampling by upsampling the minority class (fraudulent transactions) to ensure the model receives a balanced view of the classes during training.
