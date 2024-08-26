@@ -27,12 +27,10 @@ Make sure you have the following installed:
 
 1. **Clone the Repository:**
    ```bash
-  [gh repo clone krutika13/Credit-Card-Fraud-Detection](https://github.com/krutika13/credit-card-fraud-detection.git)
-   cd credit-card-fraud-detection
+  git clone https://github.com/krutika13/credit-card-fraud-detection.git
+cd credit-card-fraud-detection 
    ```
-
-
-   ```
+  
 
 ## Data
 
